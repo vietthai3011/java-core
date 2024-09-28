@@ -1,4 +1,9 @@
-import PhuongTien.*;
+
+import PhuongTien.HangSX;
+import PhuongTien.MayBay;
+import PhuongTien.Oto;
+import PhuongTien.PhuongTienDiChuyen;
+import PhuongTien.XeDap;
 
 public class main {
     public static void main(String[] args) {
