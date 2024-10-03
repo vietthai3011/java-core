@@ -1,0 +1,4 @@
+Hello world
+3.141592653589793 la so PI
+Student [maSV=1234, ten=Nguyen Van A, tenLop=1233123, namSing=2002]
+Xin chao

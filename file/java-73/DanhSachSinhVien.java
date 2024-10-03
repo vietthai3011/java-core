@@ -1,3 +1,7 @@
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -90,5 +94,22 @@ public class DanhSachSinhVien {
             }
 
         });
+    }
+
+    public void ghiDuLieuXuongFile(File file) {
+        try {
+            OutputStream os = new FileOutputStream(file);
+            ObjectOutputStream oos = new ObjectOutputStream(os);
+
+            for (SinhVien sinhVien : danhSach) {
+                oos.writeObject(sinhVien);
+            }
+
+            oos.flush();
+            oos.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
